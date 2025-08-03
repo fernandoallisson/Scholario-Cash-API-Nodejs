@@ -17,12 +17,13 @@
     "mocha": "^10.0.0",
     "nodemon": "2.0.15",
     "sinon": "^14.0.0"
-    },
-    "dependencies": {
-      "express": "4.17.1",
-      "mysql2": "3.0.0",
-      "eslint": "6.8.0",
-      "eslint-config-trybe-backend": "1.0.1",
-      "express-async-errors": "3.1.1"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "eslint": "6.8.0",
+    "eslint-config-trybe-backend": "1.0.1",
+    "express": "4.17.1",
+    "express-async-errors": "3.1.1",
+    "mysql2": "3.0.0"
   }
 }

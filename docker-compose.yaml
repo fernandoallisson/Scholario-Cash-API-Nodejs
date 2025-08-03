@@ -33,4 +33,4 @@ services:
     ports:
       - "33060:3306"
     volumes:
-        - ./scholariocashdb_script.sql:/docker-entrypoint-initdb.d/scholariocashdb_script.sql
+        - ./scholario_script.sql:/docker-entrypoint-initdb.d/scholario_script.sql

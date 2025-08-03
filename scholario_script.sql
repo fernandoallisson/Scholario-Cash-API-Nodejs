@@ -1,4 +1,4 @@
-USE scholariocachdb;
+USE scholariocashdb;
 
 CREATE TABLE people (
     id INT NOT NULL AUTO_INCREMENT,
