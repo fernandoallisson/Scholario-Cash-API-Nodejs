@@ -43,19 +43,19 @@ describe('Testando endpoints de people', () => {
       );
   });
 
-  it('Testando a listagem de todas as pessoas', () => { 
+  it('Testando a listagem de todas as pessoas', async () => { 
     sinon.stub(connection, 'execute').resolves([peopleList]);
 
-    const response = chai.request(app).get('/people');
+    const response = await chai.request(app).get('/people');
 
-  expect(response.status).to.equal(200);
-  expect(response.body).to.deep.equal(peopleList);
+    expect(response.status).to.equal(200);
+    expect(response.body).to.deep.equal(peopleList);
   });
 
-  it('Testando a listagem de pessoas pelo ID', () => {
+  it('Testando a listagem de pessoas pelo ID', async () => {
     sinon.stub(connection, 'execute').resolves([[peopleList[0]]]);
 
-    const response = chai.request(app).get('people/1');
+    const response = await chai.request(app).get('/people/1');
 
     expect(response.status).to.equal(200);
     expect(response.body).to.deep.equal(peopleList[0]);
